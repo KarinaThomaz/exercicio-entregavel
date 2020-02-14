@@ -32,12 +32,20 @@ public class Curso {
         return Objects.hash(codigoCurso);
     }
 
-    public Boolean adicionarUmAluno(Aluno umAluno){
-        if(this.maxAlunos)
+    public Boolean adicionarUmAluno(Aluno umAluno) {
+        Integer qtdeAlunos = listaAlunos.size();
+        if (qtdeAlunos < this.maxAlunos) {
+            listaAlunos.add(umAluno);
+            qtdeAlunos++;
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public void excluirAluno(Aluno umAluno){
-
+        listaAlunos.remove(umAluno);
+        System.out.println("Aluno excluído com sucessor");
     }
 
     public Integer getCodigoCurso() {
