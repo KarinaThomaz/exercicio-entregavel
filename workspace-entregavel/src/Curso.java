@@ -14,9 +14,10 @@ public class Curso {
 
     }
 
-    public Curso(Integer codigoCurso, String nome) {
+    public Curso(Integer codigoCurso, String nome, Integer maxAlunos) {
         this.codigoCurso = codigoCurso;
         this.nome = nome;
+        this.maxAlunos = maxAlunos;
     }
 
     @Override

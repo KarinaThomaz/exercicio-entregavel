@@ -27,4 +27,28 @@ public class Aluno {
     public int hashCode() {
         return Objects.hash(codigoAluno);
     }
+
+    public Integer getCodigoAluno() {
+        return codigoAluno;
+    }
+
+    public void setCodigoAluno(Integer codigoAluno) {
+        this.codigoAluno = codigoAluno;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
 }

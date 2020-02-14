@@ -3,7 +3,7 @@ import java.util.Date;
 public class Matricula {
     private Aluno aluno;
     private Curso curso;
-    private Date dataDoDia = new Date();
+    private Date dataDoDia;
 
     public Matricula(){
 
